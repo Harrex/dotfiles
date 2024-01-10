@@ -25,6 +25,7 @@ require("nvim-tree").setup({
     group_empty = true,
   },
   filters = {
+      -- dotfiles = true,
   },
   actions = {
       open_file = {
