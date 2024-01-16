@@ -1,5 +1,6 @@
 map n navigate next
 map t navigate previous
+
 map <Space> navigate next
 map <Return> navigate previous
 set first-page-column 1
