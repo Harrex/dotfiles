@@ -1,8 +1,6 @@
 vim.g.mapleader = " "
 vim.g.maplocalleader = ","
 
-vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
-
 vim.keymap.set("n", "<leader>tt", function() vim.api.nvim_command("terminal") end)
 -- Bind <C-c> to Esc
 
@@ -51,10 +49,11 @@ vim.keymap.set("n", "<leader>k", ":!kitty &<CR><CR>")
 -- Hotkey to cd into the current directory
 vim.keymap.set("n", "<leader>cd", function() vim.api.nvim_command("cd %:p:h") end)
 
-vim.keymap.set("n", "<leader>n", function() vim.api.nvim_command("NvimTreeToggle") end)
-vim.keymap.set("n", "<leader>e", function() vim.api.nvim_command("NvimTreeFocus") end)
-vim.keymap.set("v", "<leader>n", function() vim.api.nvim_command("NvimTreeToggle") end)
-vim.keymap.set("v", "<leader>e", function() vim.api.nvim_command("NvimTreeFocus") end)
+vim.keymap.set("n", "<leader>n", vim.cmd.NvimTreeToggle)
+vim.keymap.set("v", "<leader>n", vim.cmd.NvimTreeToggle)
+
+vim.keymap.set("n", "<leader>e", vim.cmd.NvimTreeFocus)
+vim.keymap.set("v", "<leader>e", vim.cmd.NvimTreeFocus)
 
 vim.keymap.set("n", "<leader>tj", function() vim.api.nvim_command("TSJToggle") end)
 
