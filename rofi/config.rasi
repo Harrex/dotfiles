@@ -7,3 +7,9 @@
 //@theme "/home/harrek/.local/share/rofi/themes/harrek.rasi"
 //@theme "/home/harrek/.local/share/rofi/themes/YoRHA.rasi"
 @theme "/home/harrek/.local/share/rofi/themes/YoRHA.rasi"
+
+configuration {
+    hover-select: true;
+    me-accept-entry: [ MousePrimary, MouseSecondary, MouseDPrimary ];
+    me-select-entry: "";
+}
