@@ -7,7 +7,7 @@ opt.laststatus = 0
 opt.showmode = false
 opt.shortmess:append "sI"
 opt.foldmethod = 'marker'
-opt.ignorecase = true
+opt.smartcase = true
 
 
 opt.tabstop = 4
