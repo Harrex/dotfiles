@@ -1,5 +1,5 @@
 return {
-    s({trig=";bl", snippetType="autosnippet"},
+    s({trig=";bp", snippetType="autosnippet"},
         fmt(
             [[ 
                 \documentclass{article}
@@ -7,16 +7,23 @@ return {
                 \usepackage{amssymb}
                 \usepackage{amsmath}
                 \usepackage{gensymb}
+                \usepackage{amsthm}
+                
+                \newtheorem*{proof*}{Proof}
+                \newtheorem{theorem}{Theorem}
 
                 \title{<>}
-                \author{Harrex Upston}
+                \author{Harrex Upston, u7925237}
 
                 \begin{document}
                 \maketitle
+                \section*{Collaboration Statement}
+                \pagebreak
+                \section*{<>}
                     <>
                 \end{document}
             ]],
-        {i(1), i(2)},
+        {i(1), i(2), i(3)},
         {delimiters = "<>"}
         )
     ),
@@ -45,7 +52,24 @@ return {
         )
     ),
 
-    s({trig=";be", snippetType="autosnippet"},
+    s({trig=";pf", snippetType="autosnippet"},
+        fmt(
+            [[ 
+                \begin{proof*}
+                    $$
+                    \begin{aligned}
+                        <>
+                    \end{aligned}
+                    $$
+                    \qed
+                \end{proof*}
+            ]],
+        {i(1)},
+        {delimiters = "<>"}
+        )
+    ),
+
+    s({trig=";bg", snippetType="autosnippet"},
         fmt(
             [[ 
                 $$
@@ -408,5 +432,241 @@ return {
         {delimiters = "<>"}
         )
     ),
-
+    --------------------------
+    -- Capital Greek Letters--
+    --------------------------
+    s({trig=":BA", snippetType="autosnippet"},
+        fmt(
+            [[
+                \mathbb{A}
+            ]],
+        {},
+        {delimiters = "<>"}
+        )
+    ),
+    s({trig=":BB", snippetType="autosnippet"},
+        fmt(
+            [[
+                \mathbb{B}
+            ]],
+        {},
+        {delimiters = "<>"}
+        )
+    ),
+    s({trig=":BC", snippetType="autosnippet"},
+        fmt(
+            [[
+                \mathbb{C}
+            ]],
+        {},
+        {delimiters = "<>"}
+        )
+    ),
+    s({trig=":BD", snippetType="autosnippet"},
+        fmt(
+            [[
+                \mathbb{D}
+            ]],
+        {},
+        {delimiters = "<>"}
+        )
+    ),
+    s({trig=":BE", snippetType="autosnippet"},
+        fmt(
+            [[
+                \mathbb{E}
+            ]],
+        {},
+        {delimiters = "<>"}
+        )
+    ),
+    s({trig=":BF", snippetType="autosnippet"},
+        fmt(
+            [[
+                \mathbb{F}
+            ]],
+        {},
+        {delimiters = "<>"}
+        )
+    ),
+    s({trig=":BG", snippetType="autosnippet"},
+        fmt(
+            [[
+                \mathbb{G}
+            ]],
+        {},
+        {delimiters = "<>"}
+        )
+    ),
+    s({trig=":BH", snippetType="autosnippet"},
+        fmt(
+            [[
+                \mathbb{H}
+            ]],
+        {},
+        {delimiters = "<>"}
+        )
+    ),
+    s({trig=":BI", snippetType="autosnippet"},
+        fmt(
+            [[
+                \mathbb{I}
+            ]],
+        {},
+        {delimiters = "<>"}
+        )
+    ),
+    s({trig=":BJ", snippetType="autosnippet"},
+        fmt(
+            [[
+                \mathbb{J}
+            ]],
+        {},
+        {delimiters = "<>"}
+        )
+    ),
+    s({trig=":BK", snippetType="autosnippet"},
+        fmt(
+            [[
+                \mathbb{K}
+            ]],
+        {},
+        {delimiters = "<>"}
+        )
+    ),
+    s({trig=":BL", snippetType="autosnippet"},
+        fmt(
+            [[
+                \mathbb{L}
+            ]],
+        {},
+        {delimiters = "<>"}
+        )
+    ),
+    s({trig=":BM", snippetType="autosnippet"},
+        fmt(
+            [[
+                \mathbb{M}
+            ]],
+        {},
+        {delimiters = "<>"}
+        )
+    ),
+    s({trig=":BN", snippetType="autosnippet"},
+        fmt(
+            [[
+                \mathbb{N}
+            ]],
+        {},
+        {delimiters = "<>"}
+        )
+    ),
+    s({trig=":BO", snippetType="autosnippet"},
+        fmt(
+            [[
+                \mathbb{O}
+            ]],
+        {},
+        {delimiters = "<>"}
+        )
+    ),
+    s({trig=":BP", snippetType="autosnippet"},
+        fmt(
+            [[
+                \mathbb{P}
+            ]],
+        {},
+        {delimiters = "<>"}
+        )
+    ),
+    s({trig=":BQ", snippetType="autosnippet"},
+        fmt(
+            [[
+                \mathbb{Q}
+            ]],
+        {},
+        {delimiters = "<>"}
+        )
+    ),
+    s({trig=":BR", snippetType="autosnippet"},
+        fmt(
+            [[
+                \mathbb{R}
+            ]],
+        {},
+        {delimiters = "<>"}
+        )
+    ),
+    s({trig=":BS", snippetType="autosnippet"},
+        fmt(
+            [[
+                \mathbb{S}
+            ]],
+        {},
+        {delimiters = "<>"}
+        )
+    ),
+    s({trig=":BT", snippetType="autosnippet"},
+        fmt(
+            [[
+                \mathbb{T}
+            ]],
+        {},
+        {delimiters = "<>"}
+        )
+    ),
+    s({trig=":BU", snippetType="autosnippet"},
+        fmt(
+            [[
+                \mathbb{U}
+            ]],
+        {},
+        {delimiters = "<>"}
+        )
+    ),
+    s({trig=":BV", snippetType="autosnippet"},
+        fmt(
+            [[
+                \mathbb{V}
+            ]],
+        {},
+        {delimiters = "<>"}
+        )
+    ),
+    s({trig=":BW", snippetType="autosnippet"},
+        fmt(
+            [[
+                \mathbb{W}
+            ]],
+        {},
+        {delimiters = "<>"}
+        )
+    ),
+    s({trig=":BX", snippetType="autosnippet"},
+        fmt(
+            [[
+                \mathbb{X}
+            ]],
+        {},
+        {delimiters = "<>"}
+        )
+    ),
+    s({trig=":BY", snippetType="autosnippet"},
+        fmt(
+            [[
+                \mathbb{Y}
+            ]],
+        {},
+        {delimiters = "<>"}
+        )
+    ),
+    s({trig=":BZ", snippetType="autosnippet"},
+        fmt(
+            [[
+                \mathbb{Z}
+            ]],
+        {},
+        {delimiters = "<>"}
+        )
+    ),
 }

@@ -17,6 +17,11 @@ vim.keymap.set("n", "s", "l")
 vim.keymap.set("n", "<C-j>", "<C-u>zz")
 vim.keymap.set("n", "j", "<C-d>zz")
 
+
+-- Cool Shit
+-- Select Last changed text
+vim.keymap.set("n", "gV", "'[V']")
+
 -- Esc in normal mode to :noh
 vim.keymap.set("n", "<Esc>", function() vim.api.nvim_command("noh") end)
 

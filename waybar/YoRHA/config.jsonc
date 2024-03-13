@@ -7,22 +7,22 @@
     "gtk-layer-shell": true,
     "height": 0,
     // "width": 97,
-    "modules-right": [
-        "custom/rofi",
-        "hyprland/workspaces",
-        "pulseaudio",
-        "pulseaudio#microphone",
+    "modules-left": [
         "clock",
-        "custom/power"
+        "pulseaudio#microphone",
+        "pulseaudio",
+        "hyprland/workspaces",
+        "custom/rofi"
     ],
 
     "modules-center": ["hyprland/window"],
 
-    "modules-left": [
-        "network",
-        "backlight",
+    "modules-right": [
+        "tray",
         "battery",
-        "tray"
+        "backlight",
+        "network",
+        "custom/power"
     ],
 
 
@@ -73,7 +73,7 @@
     },
 
     "clock": {
-        "format": "{: %H:%M   %d/%m}",
+        "format": "{: %H:%M   %a, %d/%m}",
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
     },
 
