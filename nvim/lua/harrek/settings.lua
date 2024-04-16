@@ -15,7 +15,7 @@ opt.softtabstop = 4
 opt.shiftwidth = 4
 opt.expandtab = true
 
-opt.hlsearch = truet
+opt.hlsearch = true
 opt.incsearch = true
 
 opt.termguicolors = false

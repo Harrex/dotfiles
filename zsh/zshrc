@@ -2,11 +2,17 @@
 export PATH="$PATH:/home/harrek/Scripts"
 export PATH="$PATH:/home/harrek/Applications"
 export PATH="$PATH:/home/harrek/.local/bin"
+export EDITOR="/usr/bin/nvim"
 export XDG_DATA_DIRS="~/.local/share/sounds:${XDG_DATA_DIRS:-/usr/local/share/:/usr/share/}"
+
+export GTK_IM_MODULE=fcitx5
+export QT_IM_MODULE=fcitx5
+export XMODIFIERS=@im=fcitx5
 
 
 # Aliases
 alias yay="yay --noconfirm"
+# alias cd="z"
 
 alias vim='nvim'
 alias v='nvim'
@@ -43,11 +49,12 @@ alias neofetch='clear && neofetch'
 alias cf='cd "`find . -type d -print 2>/dev/null | fzf`"'
 alias cf='cd "$(dirname "$(fzf)")"'
 alias wk="firefox --fullscreen --new-window https://www.wanikani.com/subjects/review & disown"
-alias z="nohup zathura"
+alias zath="nohup zathura & disown"
 
 alias mkc=". mkc "
 
 alias :q="exit"
+alias :wqa="exit"
 alias q="exit"
 alias :w="exit"
 
@@ -90,7 +97,9 @@ bindkey -v
 # End of lines configured by zsh-newuser-install
 
 # Plugins
-source ~/.zsh/plugins/zsh-z/zsh-z.plugin.zsh
+PLUGIN_FOLDER=/usr/share/zsh/plugins
+source $PLUGIN_FOLDER/zsh-autosuggestions/zsh-autosuggestions.plugin.zsh
+source $PLUGIN_FOLDER/zsh-syntax-highlighting/zsh-syntax-highlighting.plugin.zsh
 
 autoload -U compinit; compinit
 
@@ -99,5 +108,13 @@ zstyle ':completion:*' menu select
 # Starship
 eval "$(starship init zsh)"
 
+# Atuin
+eval "$(atuin init zsh --disable-up-arrow)"
+
+# Thefuck Alias
+eval $(thefuck --alias)
+
+# Zoxide
+eval "$(zoxide init zsh)"
 
 [ -f "/home/harrek/.ghcup/env" ] && source "/home/harrek/.ghcup/env" # ghcup-env

@@ -8,8 +8,10 @@ return {
                 \usepackage{amsmath}
                 \usepackage{gensymb}
                 \usepackage{amsthm}
+                \usepackage{enumerate}
                 
                 \newtheorem*{proof*}{Proof}
+                \newtheorem{lemma}{Lemma}
                 \newtheorem{theorem}{Theorem}
 
                 \title{<>}
@@ -38,6 +40,28 @@ return {
         )
     ),
 
+    s({trig=";rt", snippetType="autosnippet"},
+        fmt(
+            [[ 
+                \sqrt{<>}<>
+            ]],
+        {i(1), i(2)},
+        {delimiters = "<>"}
+        )
+    ),
+
+    s({trig=";bm", snippetType="autosnippet"},
+        fmt(
+            [[ 
+            \begin{bmatrix}
+            <>
+            \end{bmatrix}
+            ]],
+        {i(1)},
+        {delimiters = "<>"}
+        )
+    ),
+
     s({trig=";al", snippetType="autosnippet"},
         fmt(
             [[ 
@@ -52,10 +76,22 @@ return {
         )
     ),
 
+    s({trig=";ma", snippetType="autosnippet"},
+        fmt(
+            [[ 
+                $$
+                <>
+                $$
+            ]],
+        {i(1)},
+        {delimiters = "<>"}
+        )
+    ),
+
     s({trig=";pf", snippetType="autosnippet"},
         fmt(
             [[ 
-                \begin{proof*}
+                \begin{proof*} <>
                     $$
                     \begin{aligned}
                         <>
@@ -64,7 +100,7 @@ return {
                     \qed
                 \end{proof*}
             ]],
-        {i(1)},
+        {i(1), i(2)},
         {delimiters = "<>"}
         )
     ),

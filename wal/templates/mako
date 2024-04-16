@@ -1,5 +1,6 @@
 sort=-time
 layer=overlay
+text-color={foreground}
 background-color={background}dd
 anchor=top-center
 width=300

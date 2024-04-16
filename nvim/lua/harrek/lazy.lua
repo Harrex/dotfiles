@@ -19,6 +19,7 @@ require("lazy").setup({
         "jeffkreeftmeijer/vim-dim"
         -- Theme
     },
+
     {
         "nvimtools/none-ls.nvim"
     },
@@ -30,6 +31,10 @@ require("lazy").setup({
             'nvim-lua/plenary.nvim'
         },
     },
+
+    -- {
+    --     'https://github.com/airblade/vim-gitgutter.git'
+    -- },
 
     {
         "https://github.com/sainnhe/gruvbox-material"
@@ -45,6 +50,8 @@ require("lazy").setup({
         'nvim-treesitter/nvim-treesitter',
         cmd = 'TSUpdate'
     },
+
+
     {
         'Wansmer/treesj',
         keys = { '<space>m', '<space>j', '<space>s' },

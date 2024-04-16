@@ -1,28 +1,28 @@
 {
     "layer": "top",
-    "position": "bottom",
+    "position": "top",
     "mod": "dock",
     "exclusive": true,
     "passthrough": false,
     "gtk-layer-shell": true,
     "height": 0,
     // "width": 97,
-    "modules-left": [
-        "clock",
-        "pulseaudio#microphone",
+    "modules-right": [
+        "custom/rofi",
+        // "hyprland/workspaces",
         "pulseaudio",
-        "hyprland/workspaces",
-        "custom/rofi"
+        "pulseaudio#microphone",
+        "clock"
     ],
 
-    "modules-center": ["hyprland/window"],
+    "modules-center": ["hyprland/workspaces"],
 
-    "modules-right": [
-        "tray",
-        "battery",
-        "backlight",
+    "modules-left": [
+        "custom/power",
         "network",
-        "custom/power"
+        "backlight",
+        "battery",
+        "tray"
     ],
 
 

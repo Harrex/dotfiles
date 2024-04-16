@@ -10,11 +10,4 @@ require('lspconfig.ui.windows').default_options.border = 'single'
 
 local lspconfig = require('lspconfig')
 lspconfig.rust_analyzer.setup({})
--- lspconfig.clangd.setup({})
--- lspconfig.eslint.setup({})
--- lspconfig.texlab.setup({})
--- lspconfig.elixirls.setup {
---   cmd = { "elixir-ls" },
---   on_attach = on_attach,
---   capabilities = capabilities
--- }
+
