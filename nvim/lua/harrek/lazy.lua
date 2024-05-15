@@ -200,7 +200,7 @@ require("lazy").setup({
                 vim.keymap.set('x', 'ksd', '<plug>(vimtex-delim-toggle-modifier)')
                 vim.keymap.set('n', 'ksD', '<plug>(vimtex-delim-toggle-modifier-reverse)')
                 vim.keymap.set('x', 'ksD', '<plug>(vimtex-delim-toggle-modifier-reverse)')
-                vim.keymap.set('i', ']]',  '<plug>(vimtex-delim-close)')
+                vim.keymap.set('n', ']]',  '<plug>(vimtex-delim-close)')
                 vim.keymap.set('n', '<F8>', '<plug>(vimtex-delim-add-modifiers)')
             end
         },

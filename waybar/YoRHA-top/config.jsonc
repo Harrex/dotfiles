@@ -9,6 +9,7 @@
     // "width": 97,
     "modules-right": [
         "custom/rofi",
+        "custom/keyboardtoggle",
         // "hyprland/workspaces",
         "pulseaudio",
         "pulseaudio#microphone",
@@ -34,6 +35,11 @@
     "custom/rofi": {
         "format": ">_",
         "on-click": "rofi --show-icons -show drun"
+    },
+
+    "custom/keyboardtoggle": {
+        "format": " ",
+        "on-click": "/home/harrek/Scripts/enable-disable-laptop-keyboard.sh"
     },
 
     "hyprland/window": {

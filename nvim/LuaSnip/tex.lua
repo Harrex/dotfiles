@@ -30,6 +30,16 @@ return {
         )
     ),
 
+    s({trig=";sm", snippetType="autosnippet"},
+        fmt(
+            [[ 
+                \sum_{<>}^{<>}
+            ]],
+        {i(1), i(2)},
+        {delimiters = "<>"}
+        )
+    ),
+
     s({trig=";fr", snippetType="autosnippet"},
         fmt(
             [[ 
@@ -62,6 +72,15 @@ return {
         )
     ),
 
+    s({trig=";bn", snippetType="autosnippet"},
+        fmt(
+            [[ 
+            \begin{bmatrix} <> \end{bmatrix}
+            ]],
+        {i(1)},
+        {delimiters = "<>"}
+        )
+    ),
     s({trig=";al", snippetType="autosnippet"},
         fmt(
             [[ 

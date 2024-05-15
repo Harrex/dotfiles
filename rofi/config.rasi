@@ -1,12 +1,6 @@
 @import "~/.cache/wal/colors-rofi-dark"
-//@theme "/home/harrek/.cache/wal/rofi-theme"
-//@theme "/nix/store/k85vc676dgi5hn9hxxwzhnwc3bg9ryj9-rofi-1.7.5+wayland1/share/rofi/themes/Adapta-Nokto.rasi"
-//@theme "/home/harrek/.local/share/rofi/themes/harrek.rasi"
-//@theme "/home/harrek/.local/share/rofi/themes/squared-everforest.rasi"
-//@theme "/home/harrek/.local/share/rofi/themes/harrek.rasi"
-//@theme "/home/harrek/.local/share/rofi/themes/harrek.rasi"
 //@theme "/home/harrek/.local/share/rofi/themes/YoRHA.rasi"
-@theme "/home/harrek/.local/share/rofi/themes/YoRHA.rasi"
+@theme "/home/harrek/.local/share/rofi/themes/nova-dark.rasi"
 
 configuration {
     hover-select: true;

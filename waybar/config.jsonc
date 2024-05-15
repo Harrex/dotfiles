@@ -10,7 +10,8 @@
     "modules-left": [
         "clock",
         "hyprland/workspaces",
-        "custom/rofi"
+        "custom/rofi",
+        "custom/keyboardtoggle"
     ],
 
     "modules-center": ["hyprland/window"],
@@ -28,7 +29,7 @@
 
     "custom/power": {
         "format": "󰐥",
-        "on-click": "shutdown now"
+        "on-click": "wlogout -b 4"
     },
 
     "hyprland/window": {
@@ -51,15 +52,13 @@
 		// "active": "",
 		"default": ""
 	},
-    // "format": "{icon}"
     "format": "{name}"
     },
 
     "wlr/workspaces": {
         "disable-scroll": true,
         "all-outputs": true,
-        "on-click": "activate",
-        //"format": "{icon}",
+        "on-click": "activate"
     },
 
     "tray": {
@@ -68,7 +67,7 @@
     },
 
     "clock": {
-        "format": "{: %H:%M   %a, %d/%m}",
+        "format": "{:%H:%M   %a, %d/%m}",
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
     },
 

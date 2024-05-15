@@ -1,6 +1,8 @@
 vim.g.mapleader = " "
 vim.g.maplocalleader = ","
 
+vim.keymap.set("n", "<leader>cc", function() vim.api.nvim_command("set colorcolumn=80") end)
+vim.keymap.set("n", "<leader>cn", function() vim.api.nvim_command("set colorcolumn=00") end)
 vim.keymap.set("n", "<leader>tt", function() vim.api.nvim_command("terminal") end)
 -- Bind <C-c> to Esc
 
@@ -71,6 +73,7 @@ local opts = { buffer = true }
 
 vim.keymap.set('n', '<leader>ff', function() vim.api.nvim_command("Telescope find_files") end)
 vim.keymap.set('n', '<leader>fg', function() vim.api.nvim_command("Telescope live_grep") end)
+vim.keymap.set('n', '<leader>fs', function() vim.api.nvim_command("Telescope lsp_workspace_symbols") end)
 
 vim.keymap.set('n', 'gr', function() vim.api.nvim_command('Telescope lsp_references') end)
 

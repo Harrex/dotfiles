@@ -5,6 +5,8 @@ export PATH="$PATH:/home/harrek/.local/bin"
 export EDITOR="/usr/bin/nvim"
 export XDG_DATA_DIRS="~/.local/share/sounds:${XDG_DATA_DIRS:-/usr/local/share/:/usr/share/}"
 
+export FZF_DEFAULT_COMMAND='find . -type f ! -name ".*"'
+
 export GTK_IM_MODULE=fcitx5
 export QT_IM_MODULE=fcitx5
 export XMODIFIERS=@im=fcitx5
@@ -19,6 +21,15 @@ alias v='nvim'
 alias vi='nvim'
 alias f='"$(fzf)"'  
 alias vf='nvim "$(fzf)"'
+
+# alias "git smash"="/home/harrek/Scripts/gitsmash.sh"
+git() {
+    if [[ $1 == "smash" ]]; then 
+        "/home/harrek/Scripts/gitsmash.sh" $2
+    else
+        git $@
+    fi
+}
 
 alias neofetch='clear && neofetch'
 alias surf='GDK_BACKEND=x11 /usr/local/bin/surf'
@@ -49,7 +60,6 @@ alias neofetch='clear && neofetch'
 alias cf='cd "`find . -type d -print 2>/dev/null | fzf`"'
 alias cf='cd "$(dirname "$(fzf)")"'
 alias wk="firefox --fullscreen --new-window https://www.wanikani.com/subjects/review & disown"
-alias zath="nohup zathura & disown"
 
 alias mkc=". mkc "
 
