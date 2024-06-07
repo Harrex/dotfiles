@@ -9,8 +9,9 @@ lsp.setup()
 require('lspconfig.ui.windows').default_options.border = 'single'
 
 local lspconfig = require('lspconfig')
-lspconfig.rust_analyzer.setup({})
-lspconfig.hls.setup({
+lspconfig.rust_analyzer.setup{}
+
+lspconfig.hls.setup {
       on_attach = on_attach,
       settings = {
           haskell = {
@@ -18,4 +19,10 @@ lspconfig.hls.setup({
               formattingProvider = "fourmolu"
           }
        }
-  })
+}
+
+lspconfig.jdtls.setup {
+      root_dir = function(fname)
+          return (require("lspconfig").util.root_pattern("pom.xml", "gradle.build", ".git")(fname) or vim.fn.getcwd())
+      end,
+}

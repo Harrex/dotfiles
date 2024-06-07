@@ -30,6 +30,16 @@ return {
         )
     ),
 
+    s({trig=";in", snippetType="autosnippet"},
+        fmt(
+            [[ 
+                \int_{<>}^{<>}
+            ]],
+        {i(1), i(2)},
+        {delimiters = "<>"}
+        )
+    ),
+
     s({trig=";sm", snippetType="autosnippet"},
         fmt(
             [[ 
@@ -59,6 +69,17 @@ return {
         {delimiters = "<>"}
         )
     ),
+
+    s({trig=";lf", snippetType="autosnippet"},
+        fmt(
+            [[ 
+                \left(<>\right)
+            ]],
+        {i(1)},
+        {delimiters = "<>"}
+        )
+    ),
+
 
     s({trig=";bm", snippetType="autosnippet"},
         fmt(
@@ -103,6 +124,25 @@ return {
                 $$
             ]],
         {i(1)},
+        {delimiters = "<>"}
+        )
+    ),
+
+    s({trig=";lm", snippetType="autosnippet"},
+        fmt(
+            [[ 
+            \begin{lemma} <>
+                \begin{proof*} <>
+                $$
+                    \begin{aligned}
+                    <>
+                    \end{aligned}
+                $$
+                \qed
+                \end{proof*}
+            \end{lemma}
+            ]],
+        {i(1), i(2), i(3)},
         {delimiters = "<>"}
         )
     ),

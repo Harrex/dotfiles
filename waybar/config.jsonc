@@ -20,12 +20,18 @@
         "tray",
         "battery",
         "backlight",
+        "custom/mpd",
         "network",
         "pulseaudio",
         "pulseaudio#microphone",
         "custom/power"
     ],
 
+    "custom/mpd": {
+        "format": "󰎇 {} ",
+        "exec": "mpc status -f '%title%' | head -1 ; mpc idleloop player | while read event; do mpc status -f '%title%' | head -1; done",
+        "on-click": "mpc toggle"
+    },
 
     "custom/power": {
         "format": "󰐥",

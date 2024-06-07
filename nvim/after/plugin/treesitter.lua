@@ -7,8 +7,8 @@ require("nvim-treesitter.configs").setup(
         "heex",
         "html",
         "surface",
+        "java",
         ...
     },
-    highlight = {enable = true},
 }
 )

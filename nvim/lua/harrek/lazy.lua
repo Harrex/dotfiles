@@ -130,26 +130,27 @@ require("lazy").setup({
                 'dstein64/vim-startuptime'
             },
 
+            {                                      -- Optional
+                'williamboman/mason.nvim',
+                build = function()
+                    pcall(vim.cmd, 'MasonUpdate')
+                end,
+                config = function ()
+                    require('mason').setup({
+                        ui = {
+                            border = 'single'
+                        }
+                    })
+                end
+            },
+
             {
                 'VonHeikemen/lsp-zero.nvim',
                 branch = 'v2.x',
                 dependencies = {
                     -- LSP Support
                     {'neovim/nvim-lspconfig'},             -- Required
-                    {                                      -- Optional
-                    'williamboman/mason.nvim',
-                    build = function()
-                        pcall(vim.cmd, 'MasonUpdate')
-                    end,
-                    config = function ()
-                        require('mason').setup({
-                            ui = {
-                                border = 'single'
-                            }
-                        })
-                    end
-                },
-                {'williamboman/mason-lspconfig.nvim'}, -- Optional
+                    {'williamboman/mason-lspconfig.nvim'}, -- Optional
 
                 -- Autocompletion
                 {'hrsh7th/nvim-cmp'},     -- Required

@@ -27,7 +27,7 @@ git() {
     if [[ $1 == "smash" ]]; then 
         "/home/harrek/Scripts/gitsmash.sh" $2
     else
-        git $@
+        command git $@
     fi
 }
 
