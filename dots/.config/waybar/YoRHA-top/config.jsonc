@@ -50,7 +50,7 @@
 
     "custom/keyboardtoggle": {
         "format": " ",
-        "on-click": "/home/harrek/Scripts/enable-disable-laptop-keyboard.sh"
+        "on-click": "$HOME/Scripts/enable-disable-laptop-keyboard.sh"
     },
 
     "hyprland/window": {

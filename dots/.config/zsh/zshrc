@@ -1,9 +1,9 @@
 # Path
-export PATH="/home/harrek/.nix-profile/bin:$PATH"
-export PATH="$PATH:/home/harrek/Scripts"
-export PATH="$PATH:/home/harrek/Applications"
-export PATH="$PATH:/home/harrek/.local/bin"
-export PATH="$PATH:/home/harrek/.cargo/bin"
+export PATH="$HOME/.nix-profile/bin:$PATH"
+export PATH="$PATH:$HOME/Scripts"
+export PATH="$PATH:$HOME/Applications"
+export PATH="$PATH:$HOME/.local/bin"
+export PATH="$PATH:$HOME/.cargo/bin"
 export EDITOR="/usr/bin/nvim"
 export XDG_DATA_DIRS="~/.local/share/sounds:${XDG_DATA_DIRS:-/usr/local/share/:/usr/share/}"
 export NIX_PATH=nixpkgs=$HOME/.nix-defexpr/channels/nixpkgs/:$NIX_PATH
@@ -113,7 +113,7 @@ zstyle ':completion:*' max-errors 3
 zstyle ':completion:*' preserve-prefix '//[^/]##/'
 zstyle ':completion:*' prompt '%e errors.'
 zstyle ':completion:*' squeeze-slashes true
-zstyle :compinstall filename '/home/harrek/.zshrc'
+zstyle :compinstall filename '$HOME/.zshrc'
 zstyle ':completion:*' menu select
 
 
@@ -145,4 +145,4 @@ eval $(thefuck --alias)
 # Zoxide
 eval "$(zoxide init zsh)"
 
-[ -f "/home/harrek/.ghcup/env" ] && source "/home/harrek/.ghcup/env" # ghcup-env
+[ -f "$HOME/.ghcup/env" ] && source "$HOME/.ghcup/env" # ghcup-env
