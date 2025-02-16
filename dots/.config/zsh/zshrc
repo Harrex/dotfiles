@@ -129,8 +129,8 @@ bindkey -v
 # End of lines configured by zsh-newuser-install
 
 # Plugins
-PLUGIN_FOLDER=/usr/share/zsh/plugins
-source $PLUGIN_FOLDER/*/*.plugin.zsh
+#PLUGIN_FOLDER=/usr/share/zsh/plugins
+#source $PLUGIN_FOLDER/*/*.plugin.zsh
 
 
 # Starship
