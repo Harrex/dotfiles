@@ -4,13 +4,15 @@ export PATH="$PATH:$HOME/Scripts"
 export PATH="$PATH:$HOME/Applications"
 export PATH="$PATH:$HOME/.local/bin"
 export PATH="$PATH:$HOME/.cargo/bin"
+export PATH="$PATH:/usr/share/java"
 export EDITOR="/usr/bin/nvim"
 export XDG_DATA_DIRS="~/.local/share/sounds:${XDG_DATA_DIRS:-/usr/local/share/:/usr/share/}"
 export NIX_PATH=nixpkgs=$HOME/.nix-defexpr/channels/nixpkgs/:$NIX_PATH
 
 
-export JAVA_HOME=/usr/lib/jvm/java-17-openjdk/bin/
-export PATH_TO_FX=/usr/lib/jvm/java-17-openjdk/lib/
+# export JAVA_HOME=/usr/lib/jvm/java-17-openjdk/bin/
+# export PATH_TO_FX=/usr/lib/jvm/java-17-openjdk/lib/
+export CLASSPATH=/usr/share/java/junit-4.13.2.jar:/usr/share/java/hamcrest-core-1.3.jar:.
 
 export FZF_DEFAULT_COMMAND='find . -type f ! -name ".*"'
 

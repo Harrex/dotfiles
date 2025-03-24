@@ -8,7 +8,7 @@
 # """
 
 format = """ \
-$conda $directory $git_branch $git_status 
+$conda $directory $git_branch $git_status% 
 """
 
 # [  ](bg:#e2dbc9 fg:#1e1c1b)\
