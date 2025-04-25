@@ -16,7 +16,7 @@ $conda $directory $git_branch $git_status%
 # $character\
 
 [conda]
-format = '$environment'
+format = ' $environment'
 
 
 [directory]
