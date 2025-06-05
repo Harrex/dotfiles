@@ -130,7 +130,7 @@
     },
 
     "network": {
-        "interface": "wlo1",
+        "interface": "wlp170s0",
         "format": "{ifname}",
         "format-wifi": "{essid} ({ipaddr})   ",
         "format-ethernet": "{ifname}   ",
