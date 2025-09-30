@@ -1,4 +1,4 @@
-source /home/harrek/.config/zsh/zshrc
+source $HOME/.config/zsh/zshrc
 
 alias mon="pokeget --hide-name random"
 
