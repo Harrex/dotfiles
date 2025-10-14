@@ -2,6 +2,8 @@ source $HOME/.config/zsh/zshrc
 
 alias mon="pokeget --hide-name random"
 
+alias windows="systemctl reboot --boot-loader-entry='auto-windows'"
+
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
