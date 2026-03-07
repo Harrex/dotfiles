@@ -1,6 +1,7 @@
-@import "~/.cache/wal/colors-rofi-dark"
+@import "~/.cache/wal/colors-rofi-dark.rasi"
 //@theme "$HOME/.local/share/rofi/themes/YoRHA.rasi"
-@theme "~/.local/share/rofi/themes/nova-dark.rasi"
+// @theme "~/.local/share/rofi/themes/nova-dark.rasi"
+@theme "~/.cache/wal/rofi-theme.rasi"
 
 configuration {
     hover-select: true;
