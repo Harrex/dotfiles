@@ -33,7 +33,7 @@
     },
 
     "custom/power": {
-        "format": "",
+        "format": "",
         "on-click": "wlogout -b 4"
     },
 
@@ -121,8 +121,8 @@
 
     "pulseaudio#microphone": {
         "format": "{format_source}",
-        "format-source": " {volume}%",
-        "format-source-muted": " Muted",
+        "format-source": "󰍬 {volume}%",
+        "format-source-muted": "󰍭 Muted",
         "on-click": "pavucontrol",
         "on-scroll-up": "amixer set Capture 1%+",
         "on-scroll-down": "amixer set Capture 1%-",
