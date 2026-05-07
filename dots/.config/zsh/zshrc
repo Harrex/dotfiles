@@ -75,6 +75,7 @@ alias feh='feh --zoom fill'
 alias ls='ls --color=auto'
 alias feh='feh --scale-down'
 alias xo='xdg-open'
+alias xf='xdg-open "$(fzf)" & disown'
 
 alias v='nvim'
 alias f=fzf
@@ -158,4 +159,4 @@ eval "$(zoxide init zsh)"
 
 [ -f "$HOME/.ghcup/env" ] && source "$HOME/.ghcup/env" # ghcup-env
 
-
+pokeget --hide-name random
