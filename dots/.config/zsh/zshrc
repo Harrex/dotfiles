@@ -63,10 +63,10 @@ mkc() {
     mkdir -p $1; cd $1
 }
 
+
 alias neofetch='clear && neofetch'
 alias surf='GDK_BACKEND=x11 /usr/local/bin/surf'
 alias icat='kitten icat'
-alias theme='wal --theme'
 
 alias ll='ls -alF'
 alias la='ls -A'
