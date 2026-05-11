@@ -8,10 +8,16 @@
 # """
 
 format = """ \
-  $conda $directory $git_branch $git_status% 
+$env_var $conda $directory $git_branch $git_status% 
 """
 #  
 # (bg:#e2dbc9 fg:#1e1c1b)
+
+[env_var.PROMPTICON]
+symbol = ''
+format="$env_value"
+variable = 'PROMPTICON'
+default = ' '
 
 [conda]
 format = ' $environment'
