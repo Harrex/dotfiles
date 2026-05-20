@@ -149,7 +149,7 @@ bindkey -v
 eval "$(starship init zsh)"
 
 # Atuin
-eval "$(atuin init zsh --disable-up-arrow)"
+eval "$(atuin init zsh --disable-up-arrow --disable-ai)"
 
 # Thefuck Alias
 eval $(thefuck --alias)
