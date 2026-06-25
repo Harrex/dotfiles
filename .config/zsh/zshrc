@@ -159,4 +159,3 @@ eval "$(zoxide init zsh)"
 
 [ -f "$HOME/.ghcup/env" ] && source "$HOME/.ghcup/env" # ghcup-env
 
-pokeget --hide-name random
