@@ -3,5 +3,6 @@
 export PROMPTICON='󰎑 '
 
 source ~/.config/zsh/zshrc
+source ~/.zsh.local
 
 pokeget --hide-name random
